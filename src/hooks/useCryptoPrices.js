@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const STORAGE_KEY = "radar_cambial_history_v1";
 const AUTO_REFRESH_SECONDS = 10;
 
-function useMarketData() {
+function useCryptoPrices() {
   const [data, setData] = useState({
     USDBRL: null,
     EURBRL: null,
@@ -165,4 +165,4 @@ function useMarketData() {
   };
 }
 
-export default useMarketData;
+export default useCryptoPrices;
